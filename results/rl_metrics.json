@@ -1,0 +1,150 @@
+{
+  "reel_test": {
+    "Aléatoire": {
+      "retard_s_par_veh": 68.94048690160561,
+      "ic95": 6.543848741714786,
+      "file_moyenne": 19.2330987654321,
+      "debit_veh_h": 850.9777777777778,
+      "file_max": 44.72222222222222,
+      "changements_h": 44.0
+    },
+    "Temps fixe (30 s, optimisé)": {
+      "retard_s_par_veh": 30.067087837919438,
+      "ic95": 2.68050992884808,
+      "file_moyenne": 8.41220987654321,
+      "debit_veh_h": 898.8,
+      "file_max": 23.566666666666666,
+      "changements_h": 120.0
+    },
+    "Plus longue file (marge 6)": {
+      "retard_s_par_veh": 11.890283437947952,
+      "ic95": 1.7778111935877658,
+      "file_moyenne": 3.7057777777777767,
+      "debit_veh_h": 926.3555555555556,
+      "file_max": 14.088888888888889,
+      "changements_h": 149.64444444444445
+    },
+    "Q-learning": {
+      "retard_s_par_veh": 11.546811492931404,
+      "ic95": 1.6164147283195602,
+      "file_moyenne": 3.573987654320987,
+      "debit_veh_h": 927.3333333333334,
+      "file_max": 13.8,
+      "changements_h": 149.64444444444445
+    }
+  },
+  "synthetique": {
+    "Équilibré, modéré": {
+      "Aléatoire": 64.36519576344281,
+      "Temps fixe (30 s, optimisé)": 20.294970992693354,
+      "Plus longue file (marge 6)": 11.666371248783085,
+      "Q-learning": 11.6148846885668
+    },
+    "Asymétrique": {
+      "Aléatoire": 55.22009202653639,
+      "Temps fixe (30 s, optimisé)": 109.6152462122902,
+      "Plus longue file (marge 6)": 12.14580088433853,
+      "Q-learning": 12.094022766461464
+    },
+    "Forte charge": {
+      "Aléatoire": 120.42009403910583,
+      "Temps fixe (30 s, optimisé)": 119.44296313349734,
+      "Plus longue file (marge 6)": 111.33718021402463,
+      "Q-learning": 93.03926699992218
+    },
+    "Pic soudain": {
+      "Aléatoire": 85.31813152861626,
+      "Temps fixe (30 s, optimisé)": 69.59282300222961,
+      "Plus longue file (marge 6)": 59.02295164294742,
+      "Q-learning": 55.37678926293427
+    },
+    "Capacité réduite": {
+      "Aléatoire": 112.22688667774267,
+      "Temps fixe (30 s, optimisé)": 71.26949048064714,
+      "Plus longue file (marge 6)": 49.729031492797404,
+      "Q-learning": 49.880845459608935
+    }
+  },
+  "parametres": {
+    "G_optimal": 30,
+    "marge_optimale": 6,
+    "episodes": 30000,
+    "agents_q_test": [
+      11.972579689978733,
+      11.546811492931404,
+      11.461015189990599,
+      11.866212977734124,
+      11.63720215623457
+    ],
+    "retard_par_scenario_reel": {
+      "Aléatoire": {
+        "cellule 112 / min 335": 71.25371597334784,
+        "cellule 112 / min 350": 118.1400135097905,
+        "cellule 112 / min 365": 49.232909252228694,
+        "cellule 27 / min 335": 36.495097510616745,
+        "cellule 27 / min 350": 40.554407558289356,
+        "cellule 27 / min 365": 33.312196068859514,
+        "cellule 42 / min 335": 38.768814831536694,
+        "cellule 42 / min 350": 50.50527857068605,
+        "cellule 42 / min 365": 44.52005825511597,
+        "cellule 75 / min 335": 70.90968715784432,
+        "cellule 75 / min 350": 85.56360790617333,
+        "cellule 75 / min 365": 123.49703723177602,
+        "cellule 93 / min 335": 90.30259374960481,
+        "cellule 93 / min 350": 86.14408901901265,
+        "cellule 93 / min 365": 94.90779692920161
+      },
+      "Temps fixe (30 s, optimisé)": {
+        "cellule 112 / min 335": 33.03004758071453,
+        "cellule 112 / min 350": 19.869329309582046,
+        "cellule 112 / min 365": 32.95443953270635,
+        "cellule 27 / min 335": 16.926987337810534,
+        "cellule 27 / min 350": 24.417583083529582,
+        "cellule 27 / min 365": 12.827922377899744,
+        "cellule 42 / min 335": 33.537735365982364,
+        "cellule 42 / min 350": 36.86228161526958,
+        "cellule 42 / min 365": 40.627722842664866,
+        "cellule 75 / min 335": 27.009913152616324,
+        "cellule 75 / min 350": 21.117269140938912,
+        "cellule 75 / min 365": 36.960303293911046,
+        "cellule 93 / min 335": 42.89617507709345,
+        "cellule 93 / min 350": 29.093519976226386,
+        "cellule 93 / min 365": 42.87508788184573
+      },
+      "Plus longue file (marge 6)": {
+        "cellule 112 / min 335": 6.313555593575832,
+        "cellule 112 / min 350": 5.94298385887743,
+        "cellule 112 / min 365": 4.302955999656188,
+        "cellule 27 / min 335": 6.925821676950925,
+        "cellule 27 / min 350": 7.4377610744242295,
+        "cellule 27 / min 365": 4.2818676181710345,
+        "cellule 42 / min 335": 8.41172427664306,
+        "cellule 42 / min 350": 9.101233502696802,
+        "cellule 42 / min 365": 8.172306019791266,
+        "cellule 75 / min 335": 15.119737242809661,
+        "cellule 75 / min 350": 12.666380865437757,
+        "cellule 75 / min 365": 14.301564857159413,
+        "cellule 93 / min 335": 27.78148942132643,
+        "cellule 93 / min 350": 17.755810318300988,
+        "cellule 93 / min 365": 29.83905924339828
+      },
+      "Q-learning": {
+        "cellule 112 / min 335": 6.3803914649802325,
+        "cellule 112 / min 350": 5.8920754085276394,
+        "cellule 112 / min 365": 4.302955999656188,
+        "cellule 27 / min 335": 6.840329448971651,
+        "cellule 27 / min 350": 7.4377610744242295,
+        "cellule 27 / min 365": 4.2818676181710345,
+        "cellule 42 / min 335": 8.475360640279424,
+        "cellule 42 / min 350": 9.229593717750566,
+        "cellule 42 / min 365": 8.161465911390183,
+        "cellule 75 / min 335": 15.085219143414752,
+        "cellule 75 / min 350": 11.83355413627225,
+        "cellule 75 / min 365": 14.425541598144958,
+        "cellule 93 / min 335": 25.64530372897015,
+        "cellule 93 / min 350": 17.844479613352163,
+        "cellule 93 / min 365": 27.366272889665648
+      }
+    }
+  }
+}
